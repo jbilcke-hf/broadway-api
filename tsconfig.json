@@ -1,0 +1,12 @@
+{
+   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "target": "es2022"
+  },
+  "include": ["**/*.ts"],
+}
