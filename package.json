@@ -13,10 +13,12 @@
   "author": "Julian Bilcke <julian.bilcke@huggingface.co>",
   "license": "Apache License",
   "dependencies": {
-    "@aitube/clap": "0.0.17",
     "@aitube/broadway": "0.0.1",
+    "@aitube/clap": "0.0.17",
+    "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "pm2": "^5.3.1",
     "query-string": "^9.0.0",
     "ts-node": "^10.9.1"
   },
