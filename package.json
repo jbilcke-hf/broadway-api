@@ -13,8 +13,8 @@
   "author": "Julian Bilcke <julian.bilcke@huggingface.co>",
   "license": "Apache License",
   "dependencies": {
-    "@aitube/broadway": "0.0.2",
-    "@aitube/clap": "0.0.19",
+    "@aitube/broadway": "0.0.3",
+    "@aitube/clap": "0.0.20",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
