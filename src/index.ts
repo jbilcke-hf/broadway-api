@@ -6,6 +6,7 @@ import bodyParser from "body-parser"
 import queryString from "query-string"
 import { parseClap, ClapProject, serializeClap } from "@aitube/clap"
 import { parseScriptToClap } from "@aitube/broadway"
+import { readLocalOrRemotePlainText } from "@aitube/io"
 
 const app = express()
 const port = 3000
@@ -75,7 +76,8 @@ app.post("/", async (req, res) => {
   console.log(`received a POST request to convert a script:\n"${body.slice(0, 120)}..."`)
 
   try {
-    const clap: ClapProject = await parseScriptToClap(body)
+    const content: string = await readLocalOrRemotePlainText(body)
+    const clap: ClapProject = await parseScriptToClap(content)
     const blob = await serializeClap(clap)
     const arrayBuffer = await blob.arrayBuffer()
     res.status(200)
