@@ -71,10 +71,10 @@ app.post("/", async (req, res) => {
   const qs = queryString.parseUrl(req.url || "")
   const query = (qs || {}).query
 
-  const formData = Object.keys(req.body)
-  
-  const body = formData.length > 0 ? (formData.at(0) || "") : (req.body || "")
-  
+  const body = typeof req.body === "string"
+    ? req.body
+    : Object.keys(req.body)?.at(0) || ""
+
   console.log(`received a POST request to convert a script:\n"${body.slice(0, 120)}..."`)
 
   try {
