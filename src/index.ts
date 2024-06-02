@@ -24,8 +24,8 @@ process.on('uncaughtException', (error: Error) => {
 // app.use(bodyParser.json({limit: '50mb'}));
 //app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 // app.use(express.json({ limit: '5mb' }));
-app.use(express.urlencoded({ limit: '5mb', extended: true }));
-app.use(bodyParser.text());
+app.use(express.urlencoded({ limit: '8mb', extended: true }));
+app.use(bodyParser.text({ limit: '8mb' }));
 
 app.get("/", async (req, res) => {
   res.status(200)
