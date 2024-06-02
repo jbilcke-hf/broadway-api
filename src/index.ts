@@ -73,7 +73,7 @@ app.post("/", async (req, res) => {
 
   const formData = Object.keys(req.body)
   
-  const body = formData.length > 0 ? (formData.at(0) || "") : (req.body ||| "")
+  const body = formData.length > 0 ? (formData.at(0) || "") : (req.body || "")
   
   console.log(`received a POST request to convert a script:\n"${body.slice(0, 120)}..."`)
 
