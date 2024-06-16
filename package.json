@@ -1,6 +1,6 @@
 {
   "name": "broadway-api",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "API service to convert a script to a clap",
   "main": "src/index.ts",
   "scripts": {
