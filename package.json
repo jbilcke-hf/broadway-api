@@ -1,6 +1,6 @@
 {
   "name": "broadway-api",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "API service to convert a script to a clap",
   "main": "src/index.ts",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Julian Bilcke <julian.bilcke@huggingface.co>",
   "license": "Apache License",
   "dependencies": {
-    "@aitube/broadway": "0.0.17",
+    "@aitube/broadway": "0.0.18",
     "@aitube/clap": "0.0.29",
     "@aitube/colors": "0.0.8",
     "@aitube/io": "0.0.1",
